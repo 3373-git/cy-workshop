@@ -1,12 +1,12 @@
 {
-  "version": "1.43.473",
-  "date": "2026-11-22 15:45",
-  "url": "CY工坊-v1.43.473.zip",
-  "sha256": "559ac758082636cf08536be813c7b8017f53798df47dcab4e20f0c543a239524",
-  "size": 2086301,
+  "version": "1.43.474",
+  "date": "2026-11-22 16:01",
+  "url": "CY工坊-v1.43.474.zip",
+  "sha256": "053d353bff6d31bcd2e742a19b80ef8bdcca11e451091fc799efe39e4f43af33",
+  "size": 2086684,
   "notes": [
-    "关联打开不再崩：删掉 ProWindowActivate，显示挪出命令回调",
-    "根因一：`ProWindowActivate` 用错模式",
-    "根因二：命令回调里换模型 = 中途拆窗口"
+    "「打开对应模型」改走 ProSolidDisplay，不再拿零件顶绘图窗口",
+    "根因：`ProMdlDisplay` 是「显示在*当前*窗口里」",
+    "改法：零件/装配走 `ProSolidDisplay`"
   ]
 }
